@@ -1,0 +1,11 @@
+= 关于
+
+排版风格方向：简约而不致刻板
+
+各板块及字段皆无定规，宜自由发挥
+
+原始样式参考 https://www.sudo.ws/todd/resume.html[Todd C. Miller]
+
+''''
+License:: This work is licensed under the
+http://creativecommons.org/licenses/by-nc-sa/4.0[CC BY-NC-SA 4.0 License]

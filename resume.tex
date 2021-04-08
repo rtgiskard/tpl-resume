@@ -1,0 +1,100 @@
+%<<<1 preamble
+\documentclass[11pt,a4paper]{article}
+\input{resume.cls}
+
+\hypersetup{
+	pdftitle={简历},
+	%pdfauthor={giskard},
+	colorlinks=true,
+	hidelinks,
+}
+
+\def\personinfo#1#2{#1 \fadevsep{1.6ex} #2}
+\def\mobile#1{#1}
+\def\email#1{\href{mailto:#1}{#1}}
+\def\school#1#2{#1\snote{(#2)}}
+\def\tag#1{{\scriptsize \faTag #1}}
+%>>>
+
+\begin{document}
+
+%<<<1 基本信息
+\textbf{\LARGE 未名}
+\par \vspace{-1ex} \fadehsep{8em}
+
+\begin{tabularx}{\linewidth}{c X r c}
+\faInfoCircle		& \personinfo{X}{yyyy.mm}		& \mobile{xxxxxxxxxxx}		& \faPhone \\
+\faGraduationCap	& \school{xxxxxxxx}{xx}			& \email{xxxx@xxxx.xx}		& \faEnvelope \\
+\end{tabularx}
+
+\resect{技能??} %<<<1
+\begin{itemize}
+\item ..
+\item ..
+\item ..
+\item ..
+\item ..
+\item ..
+\end{itemize}
+
+\resect{兴趣??} %<<<1
+\begin{itemize}
+\item ..
+\item ..
+\end{itemize}
+
+\resect{自我??} %<<<1
+\begin{itemize}
+\item ..
+\item ..
+\end{itemize}
+
+\resect{教育??} %<<<1
+\begin{itemize}[label=\faUniversity, leftmargin=6ex]
+\item \exprecord{xxxxxxxx}{xx}{xxxx}{yyyy.mm - yyyy.mm}
+\item \exprecord{xxxxxxxx}{xx}{xxxx}{yyyy.mm - yyyy.mm}
+\end{itemize}
+
+\resect{工作??} %<<<1
+\begin{itemize}[label=\faMapSigns, leftmargin=6ex]
+\item \exprecord{xxxx}{xx}{xxxx}{yyyy.mm - yyyy.mm}
+\item \exprecord{xxxx}{xx}{xxxx}{yyyy.mm - yyyy.mm}
+\end{itemize}
+
+\resect{项目??} %<<<1
+
+\begin{itemize}[label=\faGears, leftmargin=6ex, itemsep=0.8ex]
+
+\item \resubsect{XXXXXXXX}{(xxxx)}{yyyy.mm} %<<<2
+\contblock{2.8em}
+
+	.. ..
+
+	\begin{itemize}[label=\faCheckSquareO]
+	\item ..
+	\item ..
+	\item ..
+	\item ..
+	\end{itemize}
+\endcontblock
+
+\item \resubsect{XXXXXXXX}{(xxxx)}{yyyy.mm - yyyy.mm} %<<<2
+\contblock{2.8em}
+
+	.. ..
+
+	\begin{itemize}[label=\faCheckSquareO]
+	\item ..
+	\item ..
+	\item ..
+	\item ..
+	\end{itemize}
+\endcontblock
+%2>>>
+
+\end{itemize}
+%>>>
+
+\end{document}
+
+% vi: set ts=4 foldmethod=marker foldmarker=<<<,>>> :
